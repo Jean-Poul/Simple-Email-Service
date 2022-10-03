@@ -29,7 +29,8 @@ public class EmailSenderService implements EmailService {
                                 String subject,
                                 String text) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("tryllehatten@hotmail.com");
+        // Insert the sender email
+        message.setFrom("");
         message.setTo(to);
         message.setSubject(subject);
         message.setText(text);
@@ -42,7 +43,8 @@ public class EmailSenderService implements EmailService {
                                       String text) {
         SimpleMailMessage message = new SimpleMailMessage();
         // Our make believe datacenter for complaints
-        message.setFrom("tryllehatten@hotmail.com");
+        // Insert the sender email
+        message.setFrom("");
         // Our make believe customer mail for receiving complaints
         message.setTo(to);
         message.setSubject(subject);

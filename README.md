@@ -23,8 +23,12 @@ spring.mail.username= INSERT YOUR OWN SENDER EMAIL HERE
 To not upload my passwords I make use of the following commands in the JVM or resource.properties file:
 ```java
 #spring.mail.password= INSERT YOUR EMAIL PASSWORD HERE OR IN THE JVM WITH -Dspring.mail.password=  
-#spring.datasource.password= INSERT YOUR POSTGRESS USER PASSWORD HERE OR IN THE JVM WITH -Dspring.datasource.password= 
-```
+#spring.datasource.password= INSERT YOUR POSTGRESS USER PASSWORD HERE OR IN THE JVM WITH -Dspring.datasource.password=   
+``` 
+  
+Lastly go to EmailResource.java and insert the mail you want to receive mails on line 22.  
+In the EmailSenderService.java go to line 33 and 47 to insert the email address of the mail sender.
+
 #### 1.2 Concept  
 The whole concept of the service is to be able to receive a user complaint from a user to then be able to generate an email to the customer service for further work and to generate an email for the user to be able to notify them when the company has received their complaint.  
 
@@ -36,6 +40,5 @@ The whole concept of the service is to be able to receive a user complaint from 
 3. Exception handling
 4. Incorporate Camunda
 5. Reach REST level 3 to make the service fully RESTful
-  
-  
+
 High five :hand:

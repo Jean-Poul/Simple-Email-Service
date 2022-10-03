@@ -17,8 +17,9 @@ public class EmailResource {
 
     @PostMapping("/test/message")
     public String testEmail() {
+        // Insert mail you want to send the message too
         this.emailSenderService.sendSimpleEmail(
-                "cph-jl360@cphbusiness.dk",
+                "",
                 "Greetings Customer (app school project test)!",
                 "We have received your message"
         );
