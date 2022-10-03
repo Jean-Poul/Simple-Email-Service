@@ -7,7 +7,6 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.Objects;
 
 
@@ -65,7 +64,8 @@ public class EmailSenderService implements EmailService {
         String subject = "Request has been received";
         String text = "Dear customer, thank you for your mail. \n" +
                 "We have received your request and will start working on it immediately";
-        message.setFrom("tryllehatten@hotmail.com");
+        // Insert the sender email
+        message.setFrom("");
         message.setTo(Objects.requireNonNull(message.getTo()));
         message.setSubject(subject);
         message.setText(text);
