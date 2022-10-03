@@ -8,7 +8,7 @@ This service will be a part of a process which will be incorporated with Camunda
 ---
 
 ## 1.0 Setup
-To run the service simply clone the project and run it. The service has been written in **Java** with the **Spring Boot** framework.
+To run the service simply clone the project and run it. The service has been written in **Java** with the **Spring Boot** framework and has a relational database(**PostgreSQL**) attached.  
 
 There can be made requests to the following two REST endpoints:
 - http://localhost:8090/emails/test/message
