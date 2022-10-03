@@ -27,7 +27,7 @@ To not upload my passwords I make use of the following commands in the JVM or re
 ``` 
   
 Lastly go to EmailResource.java and insert the mail you want to receive mails on line 22.  
-In the EmailSenderService.java go to line 33 and 47 to insert the email address of the mail sender.
+In the EmailSenderService.java file go to line 33 and 47 to insert the email address of the mail sender.
 
 #### 1.2 Concept  
 The whole concept of the service is to be able to receive a user complaint from a user to then be able to generate an email to the customer service for further work and to generate an email for the user to be able to notify them when the company has received their complaint.  
